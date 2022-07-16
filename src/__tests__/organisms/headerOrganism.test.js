@@ -10,14 +10,14 @@ describe("HeaderOrganism", () => {
 
   it("should render nav", () => {
     const nav = wrapper.find("nav");
-    expect(nav.prop("class")).toEqual(
-      "navbar navbar-expand-lg navbar-light bg-dark"
+    expect(nav.prop("className")).toEqual(
+      "navbar navbar-dark"
     );
   });
 
   it("should render a", () => {
     const anchor = wrapper.find("a");
-    expect(anchor.prop("class")).toEqual("navbar-brand");
+    expect(anchor.prop("className")).toEqual("navbar-brand");
   });
 
   it("should render LogoAtom", () => {

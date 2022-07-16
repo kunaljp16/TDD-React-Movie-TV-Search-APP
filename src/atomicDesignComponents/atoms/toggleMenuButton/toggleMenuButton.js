@@ -1,10 +1,9 @@
 import "./toggleMenuButton.scss";
 
-function ToggleMenuButton(props) {
-
+function ToggleMenuButton(prop) {
   return (
     <>
-      <button className="border-0 navbar-toggler">
+      <button className="border-0 navbar-toggler" onClick={prop.onClickHandler}>
         <span className="navbar-toggler-icon"></span>
       </button>
     </>

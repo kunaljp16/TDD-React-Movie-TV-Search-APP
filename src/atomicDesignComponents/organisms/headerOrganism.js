@@ -3,10 +3,18 @@ import NavbarListAtom from "../atoms/navbarListAtom";
 import Logo from "./../../assets/images/svg/LogoWhite.svg";
 import ToggleMenuButton from "../atoms/toggleMenuButton/toggleMenuButton";
 import SideNavbarItemMolecule from "../molecules/sideNavbarItemMolecule/sideNavbarItemMolecule";
-
+import React, { useState } from "react";
 import "./headerOrganism.scss";
 
 function HeaderOrganism() {
+  let [isMenuToggleOn, setIsMenuToggleOn] = useState(true);
+
+  const toggleMenuForSideNavbar = () => {
+    isMenuToggleOn = !isMenuToggleOn;
+    alert(isMenuToggleOn);
+    return setIsMenuToggleOn(isMenuToggleOn);
+  };
+
   return (
     <>
       <div className="header-organism container-fluid">
@@ -18,9 +26,12 @@ function HeaderOrganism() {
             <div className="collapse navbar-collapse">
               <NavbarListAtom />
             </div>
-            <ToggleMenuButton />
+            <ToggleMenuButton  onClickHandler={toggleMenuForSideNavbar}/>
           </nav>
-          <SideNavbarItemMolecule />
+          <SideNavbarItemMolecule
+            toggleStatusClass={isMenuToggleOn ? "open" : "close"}
+            onClickHandler={toggleMenuForSideNavbar}
+          />
         </div>
       </div>
     </>

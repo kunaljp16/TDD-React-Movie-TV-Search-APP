@@ -1,11 +1,11 @@
-function CloseButton() {
+function CloseButton(prop) {
  
   return (
     <>
       <button
         className="btn-close btn-close-white"
-        disabled
         aria-label="Close"
+        onClick={prop.onClickHandler}
       ></button>
     </>
   );
