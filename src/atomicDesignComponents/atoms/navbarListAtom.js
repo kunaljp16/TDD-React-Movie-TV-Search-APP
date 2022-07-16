@@ -1,7 +1,7 @@
 function NavbarListAtom() {
   return (
     <>
-      <ul className="navbar-nav">
+      <ul className="navbar-nav text-uppercase">
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="#">
             Home

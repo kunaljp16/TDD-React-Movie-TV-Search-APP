@@ -1,11 +1,12 @@
 import "./app.scss";
-import LogoAtom from "./atomicDesignComponents/atoms/logoAtom";
-import logo from "./../src/assets/images/svg/LogoWhite.svg";
+// import LogoAtom from "./atomicDesignComponents/atoms/logoAtom";
+// import logo from "./../src/assets/images/svg/LogoWhite.svg";
+import HeaderOrganism from "./atomicDesignComponents/organisms/headerOrganism";
 
 function App() {
   return (
-    <div className="container">
-      <LogoAtom src={logo} alt={"company logo"} />
+    <div className="container-fluid">
+      <HeaderOrganism />
     </div>
   );
 }

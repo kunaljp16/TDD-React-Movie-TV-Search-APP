@@ -3,6 +3,10 @@
 @import "./assets/scss/_colors.scss";
 @import "~bootstrap/scss/bootstrap";
 
+body {
+  background-color: $black;
+}
+
 .container {
   width: 1280px;
   margin: 0 auto;
