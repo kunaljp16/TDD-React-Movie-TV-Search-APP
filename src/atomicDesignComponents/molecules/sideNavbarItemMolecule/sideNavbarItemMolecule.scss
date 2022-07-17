@@ -8,7 +8,7 @@
   top: 0;
   right: -300px;
   overflow: hidden;
-  padding: 20px;
+  padding: 20px 60px 20px 20px;
   transition: right 0.5s;
 
   &.open {
@@ -27,4 +27,5 @@
       }
     }
   }
+
 }

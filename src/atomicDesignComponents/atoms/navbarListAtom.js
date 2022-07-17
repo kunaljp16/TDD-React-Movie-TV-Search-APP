@@ -1,33 +1,18 @@
-function NavbarListAtom() {
+import AnchorListData from "./../../data/navbar-data";
+
+function NavbarListAtom(prop) {
+
+  const linkListItems = AnchorListData.map((list) => (
+    <li key={list.name} className={'nav-item  ' + prop.liStyle}>
+      <a className="nav-link" href={list.url}>
+        {list.name}
+      </a>
+    </li>
+  ));
+
   return (
     <>
-      <ul className="navbar-nav text-uppercase">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">
-            Home
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            Our Screens
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            Schedule
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            Movie Library
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            Location &amp; Contact
-          </a>
-        </li>
-      </ul>
+      <ul className={'navbar-nav text-uppercase ' + prop.ulStyle}>{linkListItems}</ul>
     </>
   );
 }

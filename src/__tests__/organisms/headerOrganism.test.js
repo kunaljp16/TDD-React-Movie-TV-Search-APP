@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import HeaderOrganism from "../../atomicDesignComponents/organisms/headerOrganism";
 
 describe("HeaderOrganism", () => {
@@ -10,9 +10,7 @@ describe("HeaderOrganism", () => {
 
   it("should render nav", () => {
     const nav = wrapper.find("nav");
-    expect(nav.prop("className")).toEqual(
-      "navbar navbar-dark"
-    );
+    expect(nav.prop("className")).toEqual("navbar navbar-dark");
   });
 
   it("should render a", () => {
@@ -38,5 +36,11 @@ describe("HeaderOrganism", () => {
   it("should render ToggleMenuButton", () => {
     const toggleMenuButton = wrapper.find("ToggleMenuButton");
     expect(toggleMenuButton).toBeDefined();
+  });
+
+  it("should render SideNavbarItemMolecule with no class", () => {
+    const sidebarNav = wrapper.find("SideNavbarItemMolecule");
+    expect(sidebarNav).toBeDefined();
+    expect(sidebarNav.prop("toggleMenuStatusClass")).toEqual("");
   });
 });

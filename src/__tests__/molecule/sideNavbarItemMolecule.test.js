@@ -6,7 +6,6 @@ describe("SideNavbarItemMolecule", () => {
   let wrapper;
   beforeEach(() => {
     wrapper = shallow(<SideNavbarItemMolecule />);
-    console.log(wrapper.debug());
   });
 
   it("should render aside element", () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
-import CloseButton from "./../../atomicDesignComponents/atoms/closeButton";
+import CloseButton from "../../atomicDesignComponents/atoms/closeButton/closeButton";
 
 describe("CloseButton", () => {
   let wrapper;
@@ -10,7 +10,7 @@ describe("CloseButton", () => {
 
   it("should render button", () => {
     const btn = wrapper.find("button");
-    expect(btn.prop("className")).toEqual("btn-close btn-close-white");
+    expect(btn.prop("className")).toEqual("btn-close btn-close-white btn-close-custom");
   });
 
   it("should fire click event", () => {
