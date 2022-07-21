@@ -1,0 +1,14 @@
+@import "./../../../assets/scss/colors";
+
+.search {
+  background: url("./../../../assets//images/svg/SearchWhite.svg") no-repeat;
+  background-color: $dark-gray2;
+  color: $white;
+  background-position: 7px 6px;
+  padding-left: 36px;
+
+  &:focus {
+    background-color: $dark-gray2;
+    color: $white;
+  }
+}
