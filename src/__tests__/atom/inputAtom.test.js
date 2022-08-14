@@ -24,7 +24,6 @@ describe("InputAtomComponent", () => {
   });
 
   it("should render Input", () => {
-    console.log(wrapper.debug());
     const input = wrapper.find("input");
     expect(input).toHaveLength(1);
     expect(input.prop("type")).toEqual("search");

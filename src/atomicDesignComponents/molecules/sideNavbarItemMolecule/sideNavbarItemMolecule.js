@@ -6,7 +6,7 @@ function SideNavbarItemMolecule(prop) {
   return (
     <>
       <aside className={"sideNavSection " + prop.toggleMenuStatusClass}>
-        <CloseButton onClickHandler={prop.onClickHandler} />
+        <CloseButton onClickHandler={prop.onClickHandler} customClass={'btn-close-custom'}/>
         <NavbarListAtom ulStyle="mt-5" />
       </aside>
     </>
