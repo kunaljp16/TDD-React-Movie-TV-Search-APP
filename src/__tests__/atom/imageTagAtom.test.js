@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import ImageAtom from "../../atomicDesignComponents/atoms/imageAtom";
+import ImageTagAtom from "../../atomicDesignComponents/atoms/imageTagAtom";
 
 describe("ImageAtom", () => {
   let wrapper;
@@ -11,13 +11,12 @@ describe("ImageAtom", () => {
       className: "d-block w-100",
     };
     wrapper = shallow(
-      <ImageAtom
+      <ImageTagAtom
         src={props.src}
         alt={props.alt}
         className={props.className}
       />
     );
-    console.log(wrapper.debug());
   });
 
   it("should render image tag", () => {

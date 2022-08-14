@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import NavbarListAtom from "./../../atomicDesignComponents/atoms/navbarListAtom";
+import NavbarListAtom from "../../atomicDesignComponents/atoms/navbarListAtom";
 
 describe("navbarListAtom", () => {
   let wrapper;
@@ -52,5 +52,4 @@ describe("navbarListAtom", () => {
     const firstAnchor = anchor.at(anchor.length - 1);
     expect(firstAnchor.text()).toEqual("Location & Contact");
   });
-
 });

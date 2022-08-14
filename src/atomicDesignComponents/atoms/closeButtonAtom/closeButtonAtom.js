@@ -1,6 +1,6 @@
-import "./closeButton.scss";
+import "./closeButtonAtom.scss";
 
-function CloseButton(prop) {
+function CloseButtonAtom(prop) {
   return (
     <>
       <button
@@ -12,4 +12,4 @@ function CloseButton(prop) {
   );
 }
 
-export default CloseButton;
+export default CloseButtonAtom;

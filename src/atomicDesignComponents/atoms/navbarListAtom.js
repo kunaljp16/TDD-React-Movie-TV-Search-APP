@@ -1,9 +1,9 @@
-import AnchorListData from "./../../data/navbar-data";
+import AnchorListData from "../../data/navbar-data";
 
-function NavbarListAtom(prop) {
+function NavbarListAtom() {
 
   const linkListItems = AnchorListData.map((list) => (
-    <li key={list.name} className={'nav-item  ' + prop.liStyle}>
+    <li key={list.name} className={'nav-item'}>
       <a className="nav-link" href={list.url}>
         {list.name}
       </a>
@@ -12,7 +12,7 @@ function NavbarListAtom(prop) {
 
   return (
     <>
-      <ul className={'navbar-nav text-uppercase ' + prop.ulStyle}>{linkListItems}</ul>
+      <ul className={'navbar-nav text-uppercase'}>{linkListItems}</ul>
     </>
   );
 }

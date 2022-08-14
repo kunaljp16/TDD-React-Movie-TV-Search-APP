@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import LogoComponent from "../../atomicDesignComponents/atoms/logoAtom";
+import LogoComponent from "../../atomicDesignComponents/atoms/logoImageAtom";
 
 
 describe("LogoComponent", () => {

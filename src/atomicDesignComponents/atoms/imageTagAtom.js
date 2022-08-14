@@ -1,4 +1,4 @@
-function ImageAtom(prop) {
+function ImageTagAtom(prop) {
   return (
     <>
       <img src={prop.imageSrc} className={prop.customClass} alt={prop.altText} />
@@ -6,4 +6,4 @@ function ImageAtom(prop) {
   );
 }
 
-export default ImageAtom;
+export default ImageTagAtom;
