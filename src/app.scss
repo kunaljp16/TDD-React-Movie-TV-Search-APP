@@ -4,14 +4,19 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-  background-color: $black;
+  font-size: 16px;
+  color: $white;
+  background: $black;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
   width: 1280px;
-  margin: 0 auto;
-  @media (min-width: 320px) and (max-width: 768px) {
+  @media (min-width: 375px) and (max-width: 767px) {
     width: auto;
-    margin: 0 12px;
   }
+  margin: 0 auto;
 }
+
+
