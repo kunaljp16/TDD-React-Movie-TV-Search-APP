@@ -1,11 +1,15 @@
 import React from "react";
-import { shallow, mount } from "enzyme";
+import { shallow } from "enzyme";
 import CloseButton from "../../atomicDesignComponents/atoms/closeButton/closeButton";
 
 describe("CloseButton", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<CloseButton />);
+    const prop = {
+      areaLabel: "Close",
+      customClass: "btn-close-custom",
+    };
+    wrapper = shallow(<CloseButton customClass={prop.customClass} />);
   });
 
   it("should render button", () => {
