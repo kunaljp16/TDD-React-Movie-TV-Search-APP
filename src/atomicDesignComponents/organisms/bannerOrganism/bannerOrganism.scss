@@ -1,0 +1,20 @@
+@import "./../../../assets/scss/colors";
+
+.banner {
+  width: 100%;
+  height: 500px;
+
+  .carousel-item {
+    height: 500px;
+  }
+  .carousel-caption {
+    background-color: $black-alpha50;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .banner {
+    height: 470px;
+    background-position: 50% 66%;
+    background-size: auto;
+  }
+}
