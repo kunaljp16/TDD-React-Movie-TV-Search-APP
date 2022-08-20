@@ -1,0 +1,14 @@
+@import "./../../../assets/scss/colors";
+
+.copyRightWrapper {
+  @media (min-width: 375px) and (max-width: 576px) {
+    text-align: center;
+  }
+
+  .copyRight {
+    p {
+      font-size: 12px;
+      color: $light-gray2;
+    }
+  }
+}
