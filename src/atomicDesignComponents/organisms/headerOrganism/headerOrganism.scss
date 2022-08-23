@@ -1,0 +1,20 @@
+@import "./../../../assets/scss/colors";
+
+.header-organism {
+  border-bottom: 1px solid $light-gray;
+
+  a.nav-link {
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+  #navbarNavDropdown {
+    flex-direction: row-reverse;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
-import HeaderOrganism from "../../atomicDesignComponents/organisms/headerOrganism";
+import HeaderOrganism from "../../atomicDesignComponents/organisms/headerOrganism/headerOrganism";
 
 describe("HeaderOrganism", () => {
   let wrapper;
@@ -10,22 +10,12 @@ describe("HeaderOrganism", () => {
 
   it("should render nav", () => {
     const nav = wrapper.find("nav");
-    expect(nav.prop("className")).toEqual("navbar navbar-dark");
-  });
-
-  it("should render a", () => {
-    const anchor = wrapper.find("a");
-    expect(anchor.prop("className")).toEqual("navbar-brand");
+    expect(nav.prop("className")).toEqual("navbar navbar-expand-lg");
   });
 
   it("should render LogoAtom", () => {
     const logoAtom = wrapper.find("LogoAtom");
     expect(logoAtom).toBeDefined();
-  });
-
-  it("should render div", () => {
-    const div = wrapper.find(".navbar-brand");
-    expect(div).toBeTruthy();
   });
 
   it("should render NavbarListAtom", () => {
@@ -36,11 +26,5 @@ describe("HeaderOrganism", () => {
   it("should render ToggleMenuButton", () => {
     const toggleMenuButton = wrapper.find("ToggleMenuButton");
     expect(toggleMenuButton).toBeDefined();
-  });
-
-  it("should render SideNavbarItemMolecule with no class", () => {
-    const sidebarNav = wrapper.find("SideNavbarItemMolecule");
-    expect(sidebarNav).toBeDefined();
-    expect(sidebarNav.prop("toggleMenuStatusClass")).toEqual("");
   });
 });
