@@ -42,7 +42,7 @@ describe("CopyrightMolecule", () => {
     const p = wrapper.find("p").at(0);
     expect(p.prop("className")).toEqual("m-0");
     expect(p.text()).toEqual(
-      "Copyright © 2022 Amadeus Hotels. All rights reserved."
+      "Copyright © 2022 Random Hotels. All rights reserved."
     );
   });
 
