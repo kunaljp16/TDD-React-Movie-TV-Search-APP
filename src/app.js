@@ -1,12 +1,10 @@
 import "./app.scss";
-// import LogoAtom from "./atomicDesignComponents/atoms/logoAtom";
-// import logo from "./../src/assets/images/svg/LogoWhite.svg";
-import HeaderOrganism from "./atomicDesignComponents/organisms/headerOrganism";
+import HomePage from "./atomicDesignComponents/pages/homePage";
 
 function App() {
   return (
     <div className="container-fluid">
-      <HeaderOrganism />
+      <HomePage />
     </div>
   );
 }

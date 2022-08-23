@@ -1,0 +1,15 @@
+@import './../../../assets//scss/colors';
+
+.description {
+  background-color: $light-gray3;
+  padding: 10px 15px;
+  height: 126px;
+}
+
+.summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

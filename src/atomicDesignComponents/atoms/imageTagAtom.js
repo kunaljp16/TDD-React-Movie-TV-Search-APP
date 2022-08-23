@@ -1,7 +1,7 @@
-function ImageTagAtom(prop) {
+function ImageTagAtom(props) {
   return (
     <>
-      <img src={prop.imageSrc} className={prop.customClass} alt={prop.altText} />
+      <img src={props.src} className={props.className} alt={props.alt} />
     </>
   );
 }
