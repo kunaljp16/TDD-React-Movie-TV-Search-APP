@@ -4,7 +4,6 @@ import "./searchMolecule.scss";
 
 const SearchMolecule = (props) => {
   const onChangeHandler = (e) => {
-    // console.log(e.target.value);
     props.searchMoviesHandler(e.target.value);
   };
 

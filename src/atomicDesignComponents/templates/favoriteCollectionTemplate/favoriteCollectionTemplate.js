@@ -52,11 +52,8 @@ function FavoriteCollectionTemplate() {
     });
     setSelectedMovieObj(selectedMovie);
 
-    console.log(selectedMovieObj);
-
     if (!isMovieInFavorites(id)) {
       setFavoritesCollection((movie) => [...movie, ...selectedMovie]);
-      console.log(favoritesCollection);
     } else {
       return favoritesCollection;
     }
@@ -82,14 +79,14 @@ function FavoriteCollectionTemplate() {
     }
   }, [searchInput, newMovieCollection]);
 
-  const deleteVideoCardHandler = (id)=>{
-    // alert(id);
-    console.log(id);
-    let removedFavoriteCollection = favoritesCollection.filter(function (movie) {
+  const deleteVideoCardHandler = (id) => {
+    let removedFavoriteCollection = favoritesCollection.filter(function (
+      movie
+    ) {
       return movie.id !== id;
     });
     setFavoritesCollection(removedFavoriteCollection);
-  }
+  };
   return (
     <>
       <section className="container-fluid grayBg">
@@ -111,7 +108,10 @@ function FavoriteCollectionTemplate() {
             </div>
             <div className="col-md-12">
               <div className="row">
-                <VideoCardMolecule favoritesCollection={favoritesCollection} deleteVideoCardHandler={deleteVideoCardHandler}/>
+                <VideoCardMolecule
+                  favoritesCollection={favoritesCollection}
+                  deleteVideoCardHandler={deleteVideoCardHandler}
+                />
               </div>
             </div>
           </div>
