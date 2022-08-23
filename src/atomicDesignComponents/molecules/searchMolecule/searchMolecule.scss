@@ -1,0 +1,37 @@
+@import "./../../../assets/scss/colors";
+
+.search {
+  background: url("./../../../assets/images/svg/SearchWhite.svg") no-repeat;
+  background-color: $dark-gray2;
+  color: $white;
+  background-position: 7px 6px;
+  padding-left: 36px;
+
+  &:focus {
+    background-color: $dark-gray2;
+    color: $white;
+  }
+}
+
+.searchResult {
+  position: absolute;
+  background: $dark-gray2;
+  width: fit-content;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: scroll;
+  min-width: 296px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      padding: 8px;
+      &:hover {
+        color: $light-gray4;
+        background-color: $light-gray2;
+      }
+    }
+  }
+}
