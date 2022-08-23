@@ -1,0 +1,19 @@
+@import "./../../../assets//scss/colors";
+
+.footerWrapper,
+.copyRightWrapper {
+  @media (min-width: 375px) and (max-width: 576px) {
+    text-align: center;
+  }
+
+  .footer,
+  .copyRight {
+    p {
+      font-size: 12px;
+      color: $light-gray2;
+    }
+  }
+  .footerOuterSec {
+    border-bottom: 1px solid $light-gray;
+  }
+}
