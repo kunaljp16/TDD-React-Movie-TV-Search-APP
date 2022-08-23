@@ -2,7 +2,6 @@ import React from "react";
 
 const CarouselItemMolecule = (props) => {
   return (
-    //  src={props.imageSrc}
     <>
       <div className="carousel-item ">
         <img
