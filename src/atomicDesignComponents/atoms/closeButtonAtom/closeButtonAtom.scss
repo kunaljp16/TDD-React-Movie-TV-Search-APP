@@ -7,7 +7,15 @@
 .btn-delete-custom {
   text-align: right;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 12px;
+  top: 0;
   padding: 10px;
+  border-radius: 0;
+  background-color: white;
+}
+
+.mt-xs-4 {
+  @media (min-width: 375px) and (max-width: 576px) {
+    margin-top: 1.5rem !important;
+  }
 }

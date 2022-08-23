@@ -1,7 +1,7 @@
 function SearchResultsAtom() {
   return (
     <>
-      <div class="searchResult">
+      <div className="searchResult">
         <ul>
           <li>Search result displayed here</li>
         </ul>

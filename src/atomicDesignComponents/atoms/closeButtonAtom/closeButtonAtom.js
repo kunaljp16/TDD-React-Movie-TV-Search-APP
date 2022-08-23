@@ -1,12 +1,13 @@
 import "./closeButtonAtom.scss";
 
-function CloseButtonAtom(prop) {
+function CloseButtonAtom(props) {
+  const id = props.id;
   return (
     <>
       <button
-        className={"btn-close btn-close-white " + prop.customClass}
+        className={"btn-close btn-close-white " + props.customClass}
         aria-label="Close"
-        onClick={prop.onClickHandler}
+        onClick={() => props.deleteVideoCardHandler(id)}
       ></button>
     </>
   );
