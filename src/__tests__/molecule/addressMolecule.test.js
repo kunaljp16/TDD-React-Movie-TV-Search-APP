@@ -10,7 +10,6 @@ describe("AddressMolecule", () => {
   });
 
   it("should render div with class", () => {
-    console.log(wrapper.debug());
     const div = wrapper.find("div");
     expect(div.prop("className")).toEqual(
       "col-lg-3 col-md-6 col-sm-12 text-md-start text-sm-center"
