@@ -7,7 +7,7 @@ const SocialMediaMolecule = () => {
   return (
     <>
       <div className="col-lg-3 col-md-6 col-sm-12 text-md-end text-sm-center">
-        <span className="pe-3"> Follow us on </span>
+        <span className="pe-3">Follow us on</span>
         <span className="pe-3">
           <a href="#">
             <ImageTagAtom src={TwitterIcon} alt={"Twitter"} classNameName="" />
