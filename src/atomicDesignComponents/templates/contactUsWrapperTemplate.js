@@ -1,5 +1,5 @@
 import React from "react";
-import ContactUsOrganism from "../organisms/contactUsOrganism";
+import ContactUsOrganism from "../organisms/ContactUsOrganism/contactUsOrganism";
 import LocationOrganism from "../organisms/locationOrganism/locationOrganism";
 
 const ContactUsWrapperTemplate = () => {
